@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Logan Smyth <loganfsmyth@gmail.com>",
   "license": "MIT",
+  "files": [
+    "README.md",
+    "index.js"
+  ],
   "peerDependencies": {
     "@babel/core": "^7.0.0-0"
   },
