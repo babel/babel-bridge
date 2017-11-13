@@ -30,7 +30,7 @@ To address this, we're releasing this bridge package, to allow users to do
 
 ```js
 peerDependencies: {
-  "babel-core": "6.x | ^7.0.0-bridge"
+  "babel-core": "6.x | ^7.0.0-0"
 }
 ```
 
@@ -44,7 +44,7 @@ to install Babel 6, they could now do
 
 
 ```sh
-npm i some-package babel-core@^7.0.0-bridge @babel/core
+npm i some-package babel-core@^7.0.0-0 @babel/core
 ```
 
 to install the bridge package, and install Babel 7's core.
