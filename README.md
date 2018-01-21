@@ -30,7 +30,7 @@ To address this, we're releasing this bridge package, to allow users to do
 
 ```js
 peerDependencies: {
-  "babel-core": "6.x | ^7.0.0-0"
+  "babel-core": "6.x || ^7.0.0-0"
 }
 ```
 
