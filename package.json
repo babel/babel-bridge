@@ -14,5 +14,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0"
+  },
+  "publishConfig": {
+    "tag": "bridge"
   }
 }
