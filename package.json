@@ -1,6 +1,6 @@
 {
   "name": "@babel/core",
-  "version": "6.0.0-bridge.0",
+  "version": "6.0.0-bridge.1",
   "description": "A placeholder package that bridges @babel/core to babel-core.",
   "main": "index.js",
   "author": "Logan Smyth <loganfsmyth@gmail.com>",
