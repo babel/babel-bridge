@@ -1,7 +1,8 @@
 ## babel-bridge
 
 This repo holds what we're calling a "bridge" package that is meant to ease the
-transition for libraries that use "babel-core" as a peer dependency for Babel 6.
+transition for libraries that use "@babel/core" as a peer dependency for Babel 7,
+but still want to allow users to opt into Babel 6.
 
 The issue with Babel 7's transition to scopes is that if a package depends on
 Babel 6, they may want to add support for Babel 7 alongside. Because Babel 7
@@ -30,21 +31,22 @@ To address this, we're releasing this bridge package, to allow users to do
 
 ```js
 peerDependencies: {
-  "babel-core": "6.x || ^7.0.0-0"
+  "@babel/core": "6 | ^7.0.0-0"
 }
 ```
 
 then where users of this package would originally have done
 
 ```sh
-npm i some-package babel-core
+npm i some-package @babel/core
 ```
 
-to install Babel 6, they could now do
+to install Babel 7, they could now do
 
 
 ```sh
-npm i some-package babel-core@^7.0.0-0 @babel/core
+npm i some-package @babel/core@^6.0.0-0 babel-core
 ```
 
-to install the bridge package, and install Babel 7's core.
+to install the bridge package, and install Babel 6's core to be loaded via
+a peed dependency.

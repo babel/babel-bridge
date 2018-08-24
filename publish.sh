@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npm publish --tag bridge
+npm publish --tag bridge6
